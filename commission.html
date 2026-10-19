@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Commission - OMS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Order Management System (Employee)</h1>
+        <nav>
+            <ul>
+                <li><a href="employee-dashboard.html">Dashboard</a></li>
+                <li><a href="new-order.html">New Order</a></li>
+                <li><a href="my-orders.html">My Orders</a></li>
+                <li><a href="commission.html">Commission</a></li>
+                <li><a href="admin-dashboard.html">Admin View</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Monthly Commission Summary</h2>
+        <section class="card-container">
+            <article class="card">
+                <h3>Approved Orders</h3>
+                <p>18</p>
+            </article>
+            <article class="card">
+                <h3>Total Sales</h3>
+                <p>PKR 125,000</p>
+            </article>
+            <article class="card">
+                <h3>Total Commission (10%)</h3>
+                <p>PKR 12,500</p>
+            </article>
+        </section>
+
+        <section class="box">
+            <h3>Commission Breakdown per Order</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Date</th>
+                        <th>Customer</th>
+                        <th>Order Amount</th>
+                        <th>Commission Earned</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ORD-102</td>
+                        <td>15-Oct-2026</td>
+                        <td>Sara Ahmed</td>
+                        <td>PKR 8,000</td>
+                        <td>PKR 800</td>
+                        <td class="status-approved">Credited</td>
+                    </tr>
+                    <tr>
+                        <td>ORD-104</td>
+                        <td>16-Oct-2026</td>
+                        <td>Bilal Raza</td>
+                        <td>PKR 3,000</td>
+                        <td>PKR 300</td>
+                        <td class="status-approved">Credited</td>
+                    </tr>
+                    <tr>
+                        <td>ORD-101</td>
+                        <td>18-Oct-2026</td>
+                        <td>Ali Khan</td>
+                        <td>PKR 5,000</td>
+                        <td>PKR 500</td>
+                        <td class="status-pending">Pending Approval</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Order Management System - Phase 1 Prototype</p>
+    </footer>
+</body>
+</html>

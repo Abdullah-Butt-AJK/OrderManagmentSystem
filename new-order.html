@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Order - OMS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Order Management System (Employee)</h1>
+        <nav>
+            <ul>
+                <li><a href="employee-dashboard.html">Dashboard</a></li>
+                <li><a href="new-order.html">New Order</a></li>
+                <li><a href="my-orders.html">My Orders</a></li>
+                <li><a href="commission.html">Commission</a></li>
+                <li><a href="admin-dashboard.html">Admin View</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Submit New Order</h2>
+        <form id="order-form" action="my-orders.html">
+            <div class="form-group">
+                <label for="customerName">Customer Name:</label>
+                <input type="text" id="customerName" name="customerName" placeholder="e.g., Ali Khan" required>
+            </div>
+
+            <div class="form-group">
+                <label for="contactNumber">Contact Number:</label>
+                <input type="tel" id="contactNumber" name="contactNumber" placeholder="e.g., 0300-1234567" required>
+            </div>
+
+            <div class="form-group">
+                <label for="whatsappNumber">WhatsApp Number:</label>
+                <input type="tel" id="whatsappNumber" name="whatsappNumber" placeholder="e.g., 0300-1234567" required>
+            </div>
+
+            <div class="form-group">
+                <label for="customerAddress">Customer Address:</label>
+                <textarea id="customerAddress" name="customerAddress" rows="3" placeholder="Enter complete delivery address" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="orderAmount">Order Amount (PKR):</label>
+                <input type="number" id="orderAmount" name="orderAmount" placeholder="e.g., 5000" required>
+            </div>
+
+            <div class="form-group">
+                <label for="orderDescription">Order Description / Items:</label>
+                <textarea id="orderDescription" name="orderDescription" rows="3" placeholder="Enter item details and quantity" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Payment Method:</label>
+                <div class="radio-options">
+                    <label for="cod"><input type="radio" id="cod" name="paymentMethod" value="COD" checked> Cash on Delivery (COD)</label>
+                    <label for="partial"><input type="radio" id="partial" name="paymentMethod" value="Partial"> Partial Payment</label>
+                    <label for="full"><input type="radio" id="full" name="paymentMethod" value="Full"> Full Payment</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="amountReceived">Amount Received (PKR):</label>
+                <input type="number" id="amountReceived" name="amountReceived" placeholder="0 for COD, or enter received amount">
+            </div>
+
+            <div class="form-group">
+                <label for="paymentReceipt">Payment Receipt (For Partial or Full Payment):</label>
+                <input type="file" id="paymentReceipt" name="paymentReceipt">
+            </div>
+
+            <button type="submit" class="btn">Submit Order</button>
+            <button type="reset" class="btn btn-reset">Reset Form</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Order Management System - Phase 1 Prototype</p>
+    </footer>
+</body>
+</html>

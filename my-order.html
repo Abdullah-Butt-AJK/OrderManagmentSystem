@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Orders - OMS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Order Management System (Employee)</h1>
+        <nav>
+            <ul>
+                <li><a href="employee-dashboard.html">Dashboard</a></li>
+                <li><a href="new-order.html">New Order</a></li>
+                <li><a href="my-orders.html">My Orders</a></li>
+                <li><a href="commission.html">Commission</a></li>
+                <li><a href="admin-dashboard.html">Admin View</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="box">
+            <h2>My Submitted Orders &amp; Status</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer Name</th>
+                        <th>Items</th>
+                        <th>Order Amount</th>
+                        <th>Payment Method</th>
+                        <th>Amount Received</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ORD-101</td>
+                        <td>Ali Khan</td>
+                        <td>Wireless Headphones</td>
+                        <td>PKR 5,000</td>
+                        <td>Partial Payment</td>
+                        <td>PKR 2,000</td>
+                        <td class="status-pending">Pending</td>
+                    </tr>
+                    <tr>
+                        <td>ORD-102</td>
+                        <td>Sara Ahmed</td>
+                        <td>Smart Watch</td>
+                        <td>PKR 8,000</td>
+                        <td>Full Payment</td>
+                        <td>PKR 8,000</td>
+                        <td class="status-approved">Approved</td>
+                    </tr>
+                    <tr>
+                        <td>ORD-103</td>
+                        <td>Usman Tariq</td>
+                        <td>Bluetooth Speaker</td>
+                        <td>PKR 4,500</td>
+                        <td>Full Payment</td>
+                        <td>PKR 4,500</td>
+                        <td class="status-rejected">Rejected</td>
+                    </tr>
+                    <tr>
+                        <td>ORD-104</td>
+                        <td>Bilal Raza</td>
+                        <td>Laptop Stand</td>
+                        <td>PKR 3,000</td>
+                        <td>Cash on Delivery</td>
+                        <td>PKR 0</td>
+                        <td class="status-approved">Approved</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Order Management System - Phase 1 Prototype</p>
+    </footer>
+</body>
+</html>
