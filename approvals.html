@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Approvals - OMS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Order Management System (Admin)</h1>
+        <nav>
+            <ul>
+                <li><a href="admin-dashboard.html">Admin Dashboard</a></li>
+                <li><a href="approvals.html">Order Approvals</a></li>
+                <li><a href="reports-dispatch.html">Reports &amp; Dispatch</a></li>
+                <li><a href="employee-dashboard.html">Employee View</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="box">
+            <h2>Order Approval Queue</h2>
+            <p>Review submitted orders and payment receipts below.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Employee</th>
+                        <th>Customer</th>
+                        <th>Order Amount</th>
+                        <th>Amount Received</th>
+                        <th>Receipt</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ORD-101</td>
+                        <td>Abdullah</td>
+                        <td>Ali Khan</td>
+                        <td>PKR 5,000</td>
+                        <td>PKR 2,000 (Partial)</td>
+                        <td><a href="#">receipt101.jpg</a></td>
+                        <td class="status-pending">Pending</td>
+                        <td>
+                            <button type="button" class="btn btn-approve">Approve</button>
+                            <button type="button" class="btn btn-reject">Reject</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ORD-102</td>
+                        <td>Abdullah</td>
+                        <td>Sara Ahmed</td>
+                        <td>PKR 8,000</td>
+                        <td>PKR 8,000 (Full)</td>
+                        <td><a href="#">receipt102.jpg</a></td>
+                        <td class="status-approved">Approved</td>
+                        <td>
+                            <button type="button" class="btn btn-approve">Approve</button>
+                            <button type="button" class="btn btn-reject">Reject</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ORD-103</td>
+                        <td>Hamza Ali</td>
+                        <td>Usman Tariq</td>
+                        <td>PKR 4,500</td>
+                        <td>PKR 4,500 (Full)</td>
+                        <td><a href="#">receipt103.jpg</a></td>
+                        <td class="status-rejected">Rejected</td>
+                        <td>
+                            <button type="button" class="btn btn-approve">Approve</button>
+                            <button type="button" class="btn btn-reject">Reject</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Order Management System - Phase 1 Prototype</p>
+    </footer>
+</body>
+</html>
