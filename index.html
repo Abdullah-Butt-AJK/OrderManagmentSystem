@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Order Management System</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
         <h1>Order Management System</h1>
@@ -19,26 +22,33 @@
 
     <main>
         <section id="login-box">
-            <h2>User Login</h2>
-            <p>Shared login interface for Admin and Employee.</p><br>
-            <form action="employee-dashboard.html">
+            <h2>System Login</h2>
+            <p>Shared login interface for Admin and Employee.</p>
+            <br>
+
+            <!-- Routes to Admin or Employee dashboard based on selected dropdown role -->
+            <form action="employee-dashboard.html"
+                onsubmit="this.action = (document.getElementById('role').value === 'admin') ? 'admin-dashboard.html' : 'employee-dashboard.html';">
                 <div class="form-group">
-                    <label for="role">Select Role:</label>
+                    <label for="role">Select User Role:</label>
                     <select id="role" name="role">
                         <option value="employee">Employee</option>
                         <option value="admin">Administrator (Admin)</option>
                     </select>
                 </div>
+
                 <div class="form-group">
                     <label for="username">Username / ID:</label>
-                    <input type="text" id="username" name="username" placeholder="Enter Username" required>
+                    <input type="text" id="username" name="username" placeholder="Enter Username (e.g., EMP-101)"
+                        required>
                 </div>
+
                 <div class="form-group">
                     <label for="password">Password:</label>
                     <input type="password" id="password" name="password" placeholder="Enter Password" required>
                 </div>
-                <button type="submit" class="btn">Login as Employee</button>
-                <a href="admin-dashboard.html" class="btn btn-reset">Login as Admin</a>
+
+                <button type="submit" class="btn" style="width: 100%; margin-bottom: 10px;">Login to System</button>
             </form>
         </section>
     </main>
@@ -47,4 +57,5 @@
         <p>&copy; 2026 Order Management System - Phase 1 Prototype</p>
     </footer>
 </body>
+
 </html>
